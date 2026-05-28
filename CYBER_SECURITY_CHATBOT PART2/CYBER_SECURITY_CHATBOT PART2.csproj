@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>CYBER_SECURITY_CHATBOT_PART2</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="chatbot.drawio.png" />
+    <None Remove="human.drawio.png" />
+    <None Remove="Voice.wav.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Voice.wav.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="chatbot.drawio.png" />
+    <Resource Include="human.drawio.png" />
+  </ItemGroup>
+
+</Project>
